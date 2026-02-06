@@ -52,35 +52,33 @@ The theme is **fully dynamic** — it only shows what you are actively using.
 ### 1️⃣ Install Oh My Posh
 
 #### Windows (PowerShell)
-powershell
-winget install JanDeDobbeleer.OhMyPosh
+`winget install JanDeDobbeleer.OhMyPosh`
 
 
 #### MacOS
-brew install oh-my-posh
+`brew install oh-my-posh`
 
 #### Linux
-sudo apt install oh-my-posh
+`sudo apt install oh-my-posh`
 
-
-powershell
-winget install JanDeDobbeleer.OhMyPosh
+---
 
 ### 2️⃣ Nerd Font
 https://www.nerdfonts.com/
 
+---
 
 ### 3️⃣ Download the Theme
-git clone https://github.com/prince-pastakiya/oh-my-posh-themes.git
+`git clone https://github.com/prince-pastakiya/oh-my-posh-themes.git`
 
 ---
 
 ## ⚙️ Activate the Theme
 
 #### Windows Powershell
-notepad $PROFILE
-Add: oh-my-posh init pwsh --config "$HOME\.poshthemes\hackershell.omp.json" | Invoke-Expression
-Reload: . $PROFILE
+`notepad $PROFILE`
+Add at the very bottom: `oh-my-posh init pwsh --config "$HOME\.poshthemes\hackershell.omp.json" | Invoke-Expression`
+Reload Terminal: `. $PROFILE`
 
 ---
 

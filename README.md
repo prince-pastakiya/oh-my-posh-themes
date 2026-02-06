@@ -52,7 +52,7 @@ The theme is **fully dynamic** — it only shows what you are actively using.
 ### 1️⃣ Install Oh My Posh
 
 #### Windows (PowerShell)
-```powershell
+powershell
 winget install JanDeDobbeleer.OhMyPosh
 
 
@@ -63,14 +63,14 @@ brew install oh-my-posh
 sudo apt install oh-my-posh
 
 
-```powershell
+powershell
 winget install JanDeDobbeleer.OhMyPosh
 
 ### 2️⃣ Nerd Font
 https://www.nerdfonts.com/
 
 
-###3️⃣ Download the Theme
+### 3️⃣ Download the Theme
 git clone https://github.com/prince-pastakiya/oh-my-posh-themes.git
 
 ---
@@ -82,3 +82,12 @@ notepad $PROFILE
 Add: oh-my-posh init pwsh --config "$HOME\.poshthemes\hackershell.omp.json" | Invoke-Expression
 Reload: . $PROFILE
 
+---
+
+## ⭐ Support
+
+If you like this theme:
+
+ - ⭐ Star the repo
+ - Share it with fellow devs
+ - Customize and show it off 🚀

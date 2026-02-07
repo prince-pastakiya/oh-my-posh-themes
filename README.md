@@ -31,7 +31,7 @@ The theme is **fully dynamic** — it only shows what you are actively using.
 
 ## 📸 Preview
 
-![ELT Pipeline Overview](assets/powershell.png)
+![oh-my-posh Overview](assets/Hackershell.png)
 
 ---
 
@@ -81,6 +81,8 @@ https://www.nerdfonts.com/
  - Add at the very bottom: `oh-my-posh init pwsh --config "$HOME\.poshthemes\hackershell.omp.json" | Invoke-Expression`
  - Reload Terminal: `. $PROFILE`
 
+![oh-my-posh Overview](assets/Hackershell.png)
+
 #### Git Bash/Zsh
 
  - Check for profile: `~/.bashrc`
@@ -88,6 +90,8 @@ https://www.nerdfonts.com/
  - Add at the end of the file: `eval "$(oh-my-posh.exe init bash --config ~/.poshthemes/GitLab.omp.json)"`
  - To Save Setting: `CTRL+O` `Enter` `CTRL+X`
  - Restart GitBash
+
+![oh-my-posh Overview](assets/GitLab.png)
 
 #### Kali/Ubuntu Linux WSL
 

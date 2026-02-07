@@ -1,13 +1,15 @@
 {
-  "name": "oh-my-posh-themes",
+  "name": "Codespaces Oh-My-Posh Setup",
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
-  "remoteUser": "vscode",
-
-  "postCreateCommand": "bash .devcontainer/setup-posh.sh",
-
+  "features": {
+    "ghcr.io/devcontainers/features/bash:1": {}
+  },
+  "postCreateCommand": "bash setup-posh.sh",
   "customizations": {
     "vscode": {
+      "settings": {},
       "extensions": []
     }
-  }
+  },
+  "remoteUser": "vscode"
 }

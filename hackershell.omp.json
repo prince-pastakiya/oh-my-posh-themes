@@ -74,14 +74,15 @@
         },
         {
           "type": "docker",
-          "background": "#0db7ed",
-          "foreground": "#ffffff",
-          "leading_diamond": "\ue0d7",
-          "style": "diamond",
+          "background": "#0461ee",
+          "powerline_symbol": "\ue0b0",
+          "leading_powerline_symbol": "\ue0d7",
+          "foreground": "#000000",
+          "style": "powerline",
           "options": {
             "display_mode": "context"
           },
-          "template": " \ue7b0  {{ .Context }} ",
+          "template": " 🐳 {{ .Context }} | v{{ .Version }} ",
           "trailing_diamond": "\ue0b0"
         },
         {

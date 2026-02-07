@@ -31,7 +31,7 @@ The theme is **fully dynamic** — it only shows what you are actively using.
 
 ## 📸 Preview
 
-> _(Optional: add screenshots here later)_
+![ELT Pipeline Overview](assets/powershell.png)
 
 ---
 
@@ -76,9 +76,41 @@ https://www.nerdfonts.com/
 ## ⚙️ Activate the Theme
 
 #### Windows Powershell
-`notepad $PROFILE`
-Add at the very bottom: `oh-my-posh init pwsh --config "$HOME\.poshthemes\hackershell.omp.json" | Invoke-Expression`
-Reload Terminal: `. $PROFILE`
+
+ - `notepad $PROFILE`
+ - Add at the very bottom: `oh-my-posh init pwsh --config "$HOME\.poshthemes\hackershell.omp.json" | Invoke-Expression`
+ - Reload Terminal: `. $PROFILE`
+
+#### Git Bash/Zsh
+
+ - Check for profile: `~/.bashrc`
+ - Edit Profile: `nano ~/.bashrc`
+ - Add at the end of the file: `eval "$(oh-my-posh.exe init bash --config ~/.poshthemes/GitLab.omp.json)"`
+ - To Save Setting: `CTRL+O` `Enter` `CTRL+X`
+ - Restart GitBash
+
+#### Kali/Ubuntu Linux WSL
+
+ - Check for profile: `~/.bashrc`
+ - Edit Profile: `nano ~/.bashrc`
+ - Add at the end of the file: `eval "$(oh-my-posh.exe init bash --config ~/.poshthemes/hackershell.omp.json)"`
+ - To Save Setting: `CTRL+O` `Enter` `CTRL+X`
+ - Reload: `source ~/.bashrc`
+ - Restart GitBash
+
+---
+
+## 🛠 Customization
+
+### You are encouraged to fork and tweak:
+
+ - Colors
+ - Icons
+ - Segment order
+ - Visibility rules
+
+#### Oh My Posh Docs:
+👉 https://ohmyposh.dev/docs/
 
 ---
 

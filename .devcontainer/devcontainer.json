@@ -1,7 +1,13 @@
 {
-  "name": "HackerShell Codespace",
-  "features": {
-    "ghcr.io/devcontainers/features/common-utils:2": {}
-  },
-  "postCreateCommand": "bash .devcontainer/setup-posh.sh"
+  "name": "oh-my-posh-themes",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "remoteUser": "vscode",
+
+  "postCreateCommand": "bash .devcontainer/setup-posh.sh",
+
+  "customizations": {
+    "vscode": {
+      "extensions": []
+    }
+  }
 }

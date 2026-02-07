@@ -25,7 +25,7 @@ if ! grep -q "oh-my-posh init bash" "$HOME/.bashrc" 2>/dev/null; then
   } >> "$HOME/.bashrc"
 fi
 
-# Ensure login shells source bashrc (Codespaces fix)
+# Ensure login shells source bashrc
 if ! grep -q "source ~/.bashrc" "$HOME/.bash_profile" 2>/dev/null; then
   echo '[ -f ~/.bashrc ] && source ~/.bashrc' >> "$HOME/.bash_profile"
 fi

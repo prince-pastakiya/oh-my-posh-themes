@@ -1,6 +1,14 @@
 {
-  "name": "Codespaces Oh-My-Posh",
+  "name": "My Codespace Devcontainer",
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
-  "postCreateCommand": "bash setup-posh.sh",
-  "remoteUser": "vscode"
+  "features": {},
+  "postCreateCommand": "bash /workspaces/oh-my-posh-themes/setup-posh.sh",
+  "customizations": {
+    "vscode": {
+      "settings": {},
+      "extensions": [
+        "ms-azuretools.vscode-docker"
+      ]
+    }
+  }
 }

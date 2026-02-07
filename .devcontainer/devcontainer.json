@@ -1,0 +1,7 @@
+{
+  "name": "HackerShell Codespace",
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {}
+  },
+  "postCreateCommand": "bash .devcontainer/setup-posh.sh"
+}

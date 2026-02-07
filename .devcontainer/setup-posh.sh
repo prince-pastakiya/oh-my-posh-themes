@@ -3,22 +3,22 @@ set -e
 
 echo "🔧 Installing oh-my-posh..."
 
-# Install oh-my-posh
+# Install oh-my-posh (official)
 curl -s https://ohmyposh.dev/install.sh | bash -s -- -d /usr/local/bin
 
-echo "🎨 Setting up HackerShell theme..."
+echo "🎨 Setting up custom oh-my-posh theme..."
 
 # Create theme directory
-mkdir -p ~/.poshthemes
+mkdir -p "$HOME/.poshthemes"
 
 # Copy theme from repo to home
-cp /workspaces/oh-my-posh-themes/GitLab.omp.json ~/.poshthemes/
+cp "$PWD/GitLab.omp.json" "$HOME/.poshthemes/"
 
 # Enable oh-my-posh in bash (only once)
-if ! grep -q "oh-my-posh init bash" ~/.bashrc; then
-  echo '' >> ~/.bashrc
-  echo '# Enable oh-my-posh' >> ~/.bashrc
-  echo 'eval "$(oh-my-posh init bash --config ~/.poshthemes/GitLab.omp.json)"' >> ~/.bashrc
+if ! grep -q "oh-my-posh init bash" "$HOME/.bashrc"; then
+  echo "" >> "$HOME/.bashrc"
+  echo "# Enable oh-my-posh" >> "$HOME/.bashrc"
+  echo "eval \"\$(oh-my-posh init bash --config \$HOME/.poshthemes/GitLab.omp.json)\"" >> "$HOME/.bashrc"
 fi
 
-echo "✅ HackerShell activated"
+echo "✅ oh-my-posh activated"
